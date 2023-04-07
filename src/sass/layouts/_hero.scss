@@ -1,0 +1,121 @@
+.hero {
+  width: 100%;
+  min-height: 400px;
+  margin-top: 60px;
+
+   @media screen and (min-width: 768px) {
+    margin-top: 0 ;}
+
+  display: flex;
+  align-items: center;
+
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/BG/Hero-s.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover ;
+  background-color: $hero-bg;
+  background-position: center;
+
+
+  @media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+      to left bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/BG/Hero-s@2x.jpg);
+	}
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to left bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/BG/hero-m.jpg);
+
+
+  @media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+      to left bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/BG/hero-m@2x.jpg);
+	}
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+    background-image: linear-gradient(
+      to left bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/BG/hero-l.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+      to left bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/BG/hero-l@2x.jpg);
+	}
+  }
+}
+
+.hero__container {
+  max-width: 360px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $light-text;
+
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
+}
+
+.hero__btn {
+  @extend %button;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 24px;
+
+  display: block;
+}

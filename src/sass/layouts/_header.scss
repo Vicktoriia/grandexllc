@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  width: 100%;
+  min-height: 60px;
+  z-index: 1;
+  top: 0;
+
+
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  background-color: $main-bg;
+  border-bottom: 1px solid $nav-underline;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+  }
+
+  &__content {
+    margin-left: 93px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.top-menu {
+  @extend %container;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+}

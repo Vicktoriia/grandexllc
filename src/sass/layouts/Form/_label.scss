@@ -1,0 +1,24 @@
+.modal-form__label {
+  position: absolute;
+  top: 12px;
+  left: 42px;
+
+  height: 14px;
+
+  font-size: 12px;
+  font-family: $main-font;
+  font-weight: 400;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: $secondary-text;
+
+  transition: color $animation,
+    transform $animation;
+
+  .modal-form__input:hover + &,
+  .modal-form__input:focus + & {
+    color: $accent;
+    transform: translate(-42px, -200%);
+  }
+}

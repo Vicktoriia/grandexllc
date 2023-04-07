@@ -1,0 +1,51 @@
+// Colors
+$light-text: #FFFFFF;
+$color-black: #000000;
+
+// Основний колір текста
+$main-text: #212121;
+// колір другорядних заголовків, псевдоелемента героя
+$secondary-text: #757575;
+// footer конаткты текст
+$footer-contacts: rgba(255, 255, 255, 0.6);
+
+//колір заголовків та більшості кнопок, іконки соцмереж при ховері, текст світлих кнопок
+$accent: #2196f3;
+
+// Фон секцій
+$main-bg: #ffffff;
+$secondary-bg: #f5f4fa;
+$hero-bg: #c4c4c4;
+$footer-bg: #2f303a;
+$bg-section-comment: #FAFAFA;
+// top menu underline
+$nav-underline: #ececec;
+
+// Портфолио рамка проекта
+$item-border: #eeeeee;
+
+// цвет иконок соцсетей
+$social-links: #afb1b8;
+
+// footer цвет иконок соцсетей
+
+$footer-sl: rgba(255, 255, 255, 0.1);
+// Лапки в слайдері
+$color-slider-quotes: #E1E1E1;
+
+// Пагінація слайдера
+$color-slider-dots: #C7133E;
+
+// Будиночок слайдера
+$color-slider-home: #D31342;
+
+// Тінь карток
+$box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+// Змінні для шрифтів
+$main-font: "Roboto", sans-serif;
+$secondary-font: "Raleway", cursive;
+$font-size: 16px;
+
+// Переходи та анімація
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);

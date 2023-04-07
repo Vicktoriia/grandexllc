@@ -1,0 +1,43 @@
+.license__checkbox-img {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-radius $animation,
+    opacity $animation,
+    background-color $animation;
+}
+
+.license--checked {
+  width: 11px;
+  height: 8px;
+
+  fill: $light-text;
+  border: 0.2px solid $light-text;
+  background-color: $light-text;
+
+  opacity: 0;
+
+  .license__checkbox:checked ~ .license__checkbox-img & {
+    opacity: 1;
+  }
+}
+
+.license--nochecked {
+  width: 16px;
+  height: 15px;
+
+  fill: $main-text;
+  background-color: $main-text;
+
+  opacity: 1;
+
+  .license__checkbox:checked ~ .license__checkbox-img & {
+    opacity: 0;
+  }
+}
+
+.license__checkbox:checked ~ .license__checkbox-img .license__icon-check {
+  background-color: $accent;
+  border-radius: 2px;
+}

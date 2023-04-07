@@ -1,0 +1,60 @@
+.clients {
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__logo {
+    fill: currentColor;
+  }
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - (3 - 1) * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - (6 - 1) * 30px) / 6);
+  }
+}
+
+.clients__link {
+  max-width: 210px;
+  height: 92px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: social-links;
+  border: 1px solid social-links;
+  border-radius: 4px;
+
+  transition: $animation,
+    border-color $animation;
+
+  &:hover,
+  &:focus {
+    border-color: accent;
+    color: accent;
+    outline: none;
+  }
+}

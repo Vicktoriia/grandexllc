@@ -1,0 +1,49 @@
+.modal-form__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $main-text;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $main-bg;
+  cursor: pointer;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.modal-form__icon-close {
+  fill: currentColor;
+  display: block;
+}
+
+.btn-send {
+  @extend %button;
+
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

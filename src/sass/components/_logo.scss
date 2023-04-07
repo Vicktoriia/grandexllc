@@ -1,0 +1,48 @@
+.logo {
+  width: 134px;
+  height: 28px;
+
+  display: flex;
+
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  color: $main-text;
+
+  &:hover,
+  &:focus {
+    color: $main-text;
+  }
+
+  &--accent {
+    color: $accent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 145px;
+    height: 31px;
+    font-size: 26px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28.18/24);
+  letter-spacing: 0.03em;
+
+  color: $light-text;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  line-height: 1.19;
+  }
+
+  &:hover,
+  &:focus {
+    color: $light-text;
+  }
+}

@@ -1,0 +1,37 @@
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $social-links;
+  background-color: $main-bg;
+  border-radius: 50%;
+
+  transition: $animation,
+    background-color $animation;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    color: $light-text;
+    background-color: $accent;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

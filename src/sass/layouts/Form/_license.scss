@@ -1,0 +1,30 @@
+.license {
+  margin-bottom: 30px;
+  width: 100%;
+
+  .license__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+  }
+
+  .license__label-inner {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+    user-select: none;
+    color: $secondary-text;
+
+    @media screen and (min-width: 1200px){
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
+  }
+
+  .license__link {
+    color: $accent;
+    text-decoration-line: underline;
+  }
+}

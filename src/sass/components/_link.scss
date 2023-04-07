@@ -1,0 +1,12 @@
+.link {
+  text-decoration: none;
+  color: currentColor;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    color: $accent;
+    cursor: pointer;
+  }
+}
