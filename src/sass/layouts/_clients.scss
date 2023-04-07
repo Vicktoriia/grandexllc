@@ -44,17 +44,17 @@
   align-items: center;
   justify-content: center;
 
-  color: social-links;
+  color: $social-links;
   border: 1px solid social-links;
   border-radius: 4px;
 
   transition: $animation,
-    border-color $animation;
+  border-color $animation;
 
   &:hover,
   &:focus {
-    border-color: accent;
-    color: accent;
+    border-color: $accent;
+    color: $accent;
     outline: none;
   }
 }

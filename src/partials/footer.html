@@ -1,0 +1,209 @@
+<!--Footer-->
+<footer class="footer" id="contacts">
+  <div class="container footer__container">
+    <div class="footer__contacts">
+      <a class="footer__logo logo link" href="./index.html">
+        <span class="logo--accent">G</span>randex
+      </a>
+      <address class="footer__address">
+        <ul class="footer__contacts-list list">
+          <li class="footer__contacts-item">
+            <a
+              href="https://goo.gl/maps/AorqNfxdtR1ALaBC8"
+              target="-blank"
+              rel="noopener noreferrer"
+              class="footer__address-link link"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link link" href="mailto:info.example.com"
+              >info.example.com</a
+            >
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link link" href="tel:+380991111111">
+              +38 099 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="footer__social-links">
+      <strong class="footer--action">приєднуйтесь</strong>
+      <ul class="social-links list">
+        <li class="social-links__item">
+          <a
+            class="footer__social-link social-link"
+            href="#"
+            aria-label="Instagram"
+            target="-blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="20px" height="20px">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a
+            href="#"
+            class="footer__social-link social-link"
+            aria-label="Twitter"
+            target="-blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="20px" height="20px">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a
+            href="#"
+            class="footer__social-link social-link"
+            aria-label="Facebook"
+            target="-blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="20px" height="20px">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a
+            href="#"
+            class="footer__social-link social-link"
+            aria-label="Linkedin"
+            target="-blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social-link__icon" width="20px" height="20px">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Footer form -->
+    <div class="footer-form__container">
+      <form class="footer-form">
+        <b class="footer--action"> Підпишіться на розсилку </b>
+        <div class="footer-form__subscription">
+          <input
+            type="email"
+            id="footerEmail"
+            class="footer-form__email-input"
+            name="footerEmail"
+            placeholder=" "
+          />
+          <label class="footer-form__email-label" for="footerEmail"
+            >E-mail</label
+          >
+          <button type="submit" class="footer-form__btn btn">
+            <span>Підписатися</span>
+            <svg class="footer-form__icon-send" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</footer>
+<!-- Modal form -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="backdrop__inner">
+    <form class="modal-form" autocomplete="on" novalidate>
+      <button class="modal-form__btn-close btn" data-modal-close>
+        <svg class="modal-form__icon-close" width="18px" height="18px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <b class="modal-form__action-text"
+        >Залиште свої дані, ми вам передзвонимо</b
+      >
+      <div class="modal-form__input-container">
+        <input
+          id="modalname"
+          class="modal-form__input"
+          type="text"
+          name="modalname"
+          placeholder=""
+        />
+        <label for="modalname" class="modal-form__label">Ім'я</label>
+        <svg class="modal-form__input-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+      <div class="modal-form__input-container">
+        <input
+          id="modalphone"
+          class="modal-form__input"
+          type="tel"
+          name="modalphone"
+          placeholder=""
+        />
+        <label for="modalphone" class="modal-form__label">Телефон</label>
+        <svg class="modal-form__input-icon" width="13" height="13">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+      <div class="modal-form__input-container">
+        <input
+          id="modalemail"
+          class="modal-form__input"
+          type="email"
+          name="modalemail"
+          placeholder=""
+        />
+        <label for="modalemail" class="modal-form__label">Пошта</label>
+        <svg class="modal-form__input-icon" width="15" height="12">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>
+      <div
+        class="modal-form__input-container modal-form__input-container-comment"
+      >
+        <textarea
+          id="modalcomment"
+          class="modal-form__input modal-form__comment"
+          name="modalcomment"
+          cols="30"
+          rows="10"
+          placeholder="Введіть текст"
+        ></textarea>
+        <label for="modalcomment" class="modal-form__label">Коментар</label>
+      </div>
+      <div class="license">
+        <label class="license__label">
+          <input
+            class="license__checkbox visually-hidden"
+            type="checkbox"
+            name="license__label"
+          />
+          <span class="license__checkbox-img">
+            <svg class="license__icon-check" width="16px" height="15px">
+              <use
+                class="license--checked"
+                href="./images/icons.svg#icon-check"
+              ></use>
+              <use
+                class="license--nochecked"
+                href="./images/icons.svg#icon-checkbox"
+              ></use>
+            </svg>
+          </span>
+          <span class="license__label-inner">
+            Погоджуюся з розсилкою та приймаю
+            <a class="license__link link" href="" rel="noopener noreferrer">
+              Умови договору
+            </a>
+          </span>
+        </label>
+      </div>
+      <button class="btn btn-send" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
