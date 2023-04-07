@@ -1,0 +1,31 @@
+.about {
+  padding-bottom: 94px;
+  padding-top: 0;
+
+  &__container {
+    @extend %container;
+    margin: auto;
+
+  }
+
+  &__row {
+    width: 100%;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: light-text;
+  }
+
+  &__img {
+    width: 35%;
+  }
+
+  &__descr {
+    width: 60%;
+  }
+}
