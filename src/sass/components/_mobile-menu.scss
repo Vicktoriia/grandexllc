@@ -1,7 +1,6 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 100;
 
   width: 100vw;
@@ -84,6 +83,7 @@
 
 .mobile-menu-close {
   opacity: 0;
+
   .mobile-menu-btn.is-open & {
     opacity: 1;
   }

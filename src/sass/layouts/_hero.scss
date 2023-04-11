@@ -2,77 +2,69 @@
   width: 100%;
   min-height: 400px;
   margin-top: 60px;
+  position: sticky;
 
-   @media screen and (min-width: 768px) {
-    margin-top: 0 ;}
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 
   display: flex;
   align-items: center;
 
-  background-image: linear-gradient(
-      to left bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/bg.jpg);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover ;
+  background-image: linear-gradient(to left bottom,
+    rgba(47, 48, 58, 0.7),
+    rgba(47, 48, 58, 0.7)),
+  url(../images/hero/bg.jpg);
+  background-repeat: no-repeat,
+  no-repeat,
+  no-repeat;
+  background-size: cover;
   background-color: $hero-bg;
   background-position: center;
 
 
   @media (min-device-pixel-ratio: 2),
-		(-webkit-min-device-pixel-ratio: 2),
-		(min-resolution: 192dpi),
-		(min-resolution: 2dppx) {
-		background-image: linear-gradient(
-      to left bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../images/hero/bg.jpg);
-	}
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to left bottom,
+        rgba(47, 48, 58, 0.7),
+        rgba(47, 48, 58, 0.7)), url(../images/hero/bg.jpg);
+  }
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to left bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/bg.jpg);
+    background-image: linear-gradient(to left bottom,
+        rgba(47, 48, 58, 0.7),
+        rgba(47, 48, 58, 0.7)),
+      url(../images/hero/bg.jpg);
 
 
-  @media (min-device-pixel-ratio: 2),
-		(-webkit-min-device-pixel-ratio: 2),
-		(min-resolution: 192dpi),
-		(min-resolution: 2dppx) {
-		background-image: linear-gradient(
-      to left bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../images/hero/bg.jpg);
-	}
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.7),
+          rgba(47, 48, 58, 0.7)), url(../images/hero/bg.jpg);
+    }
   }
 
 
   @media screen and (min-width: 1200px) {
-    min-height: 600px;
-    background-image: linear-gradient(
-      to left bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/bg.jpg);
+    min-height: 800px;
+    background-image: linear-gradient(to left bottom,
+        rgba(47, 48, 58, 0.7),
+        rgba(47, 48, 58, 0.7)),
+      url(../images/hero/bg.jpg);
 
     @media (min-device-pixel-ratio: 2),
-		(-webkit-min-device-pixel-ratio: 2),
-		(min-resolution: 192dpi),
-		(min-resolution: 2dppx) {
-		background-image: linear-gradient(
-      to left bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../images/hero/bg.jpg);
-	}
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.7),
+          rgba(47, 48, 58, 0.7)), url(../images/hero/bg.jpg);
+    }
   }
 }
 
@@ -82,6 +74,7 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 696px;
+    text-align: center;
   }
 
   display: flex;
@@ -99,13 +92,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: $light-text;
+  color: $accent;
 
   gap: 30px;
 
   @media screen and (min-width: 1200px) {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 64px;
     line-height: calc(60 / 44);
   }
 }
@@ -118,4 +111,15 @@
   padding: 10px 24px;
 
   display: block;
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  color: $footer-bg;
+}
+
+.hero__text {
+  color: $light-text;
+  font-weight: 700;
+  margin-bottom: 30px;
 }

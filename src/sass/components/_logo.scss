@@ -9,7 +9,7 @@
   line-height: 1.2;
   font-family: $secondary-font, sans-serif;
   font-weight: 700;
-  color: $secondary-text;
+  color: $light-text;
 
   &:hover,
   &:focus {
@@ -26,6 +26,10 @@
     height: 31px;
     font-size: 26px;
   }
+}
+
+.js-no-transparency>.logo {
+  color: $secondary-text;
 }
 
 .footer__logo {

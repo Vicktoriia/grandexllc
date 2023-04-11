@@ -5,27 +5,88 @@
   &__container {
     @extend %container;
     margin: auto;
-
   }
 
   &__row {
     width: 100%;
-    bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 
-    background-color: rgba(47, 48, 58, 0.8);
-    color: light-text;
+    color: $main-text;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: column;
+    }
   }
 
   &__img {
-    width: 35%;
+    width: 50%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 65%;
+    }
   }
 
   &__descr {
-    width: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
   }
+
+  &__text {
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      width: 80%;
+    }
+  }
+}
+
+.about__why {
+  margin: 0 auto auto;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: $secondary-bg;
+}
+
+.about-why {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+
+  // &__container-1 {
+  //   margin-bottom: 20px;
+  //   @media screen and (min-width: 768px) {
+  //       margin-bottom: 0;
+  //       margin-right: 20px;
+  //     }
+  // }
+}
+
+.about-why__container {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.about-why__item {
+  padding-bottom: 10px;
 }
