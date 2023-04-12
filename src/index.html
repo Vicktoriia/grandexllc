@@ -24,7 +24,7 @@
 
     <script type="module" src="./index.js"></script>
   </head>
-  <body data-body-contacts>
+  <body data-body>
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/benefits.html"></include>
@@ -37,8 +37,8 @@
 
     <script src="./js/contacts-modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/header-modal.js"></script>
-    <script src="./js/reviews.js"></script>
+    <!-- <script src="./js/header-modal.js"></script> -->
+    <!-- <script src="./js/reviews.js"></script> -->
     <script src="./js/header-scroll.js"></script>
     <!-- <script src="./js/feedback.js"></script> -->
 
@@ -54,5 +54,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('N6C48f6Ao0HOx8PHA');
+      })();
+      var templateParams = {
+        to_name: 'xyz',
+        name: 'abc',
+        message: 'Please Find out the attached file',
+      };
+
+      emailjs.send('service_qfxw02m', 'template_0w5vank', templateParams).then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+    </script>
   </body>
 </html>

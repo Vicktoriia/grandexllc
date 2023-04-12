@@ -1,5 +1,4 @@
-.about {
-  padding-bottom: 94px;
+.system {
   padding-top: 0;
 
   &__container {
@@ -9,24 +8,16 @@
 
   &__row {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+
+
     align-items: center;
 
     color: $main-text;
-
-    @media screen and (min-width: 1200px) {
-      flex-direction: column;
-    }
   }
 
   &__img {
-    width: 50%;
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 768px) {
-      width: 65%;
-    }
+    width: 100%;
+    margin-bottom: 30px;
   }
 
   &__descr {
@@ -36,21 +27,14 @@
     align-items: center;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-    }
   }
 
   &__text {
     width: 100%;
-
-    @media screen and (min-width: 1200px) {
-      width: 80%;
-    }
   }
 }
 
-.about__why {
+.system__why {
   margin: 0 auto auto;
   padding: 10px;
   width: 100%;
@@ -60,17 +44,9 @@
   color: $light-text;
 }
 
-.about-why {
+.system-why {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   gap: 20px;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
-
 
   // &__container-1 {
   //   margin-bottom: 20px;
@@ -81,14 +57,10 @@
   // }
 }
 
-.about-why__container {
+.system-why__container {
   width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
 }
 
-.about-why__item {
+.system-why__item {
   padding-bottom: 10px;
 }

@@ -95,14 +95,12 @@
         <div class="footer-form__subscription">
           <input
             type="email"
-            id="footerEmail"
+            id="email"
             class="footer-form__email-input"
             name="footerEmail"
             placeholder=" "
           />
-          <label class="footer-form__email-label" for="footerEmail"
-            >E-mail</label
-          >
+          <label class="footer-form__email-label" for="email">E-mail</label>
           <button type="submit" class="footer-form__btn btn">
             <span>Ok</span>
             <svg class="footer-form__icon-send" width="24px" height="24px">
@@ -117,50 +115,50 @@
 <!-- Modal form -->
 <div class="backdrop is-hidden" data-modal>
   <div class="backdrop__inner">
-    <form class="modal-form" autocomplete="on" novalidate>
+    <form class="modal-form" autocomplete="on" validate>
       <button class="modal-form__btn-close btn" data-modal-close>
         <svg class="modal-form__icon-close" width="18px" height="18px">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <b class="modal-form__action-text"
-        >Leave your details, we will call you back</b
+        >Leave us a message, we will call you back</b
       >
       <div class="modal-form__input-container">
         <input
-          id="modalname"
+          id="name"
           class="modal-form__input"
           type="text"
-          name="modalname"
+          name="name"
           placeholder=""
         />
-        <label for="modalname" class="modal-form__label">Ім'я</label>
+        <label for="name" class="modal-form__label name">Name</label>
         <svg class="modal-form__input-icon" width="12" height="12">
           <use href="./images/icons.svg#icon-person"></use>
         </svg>
       </div>
       <div class="modal-form__input-container">
         <input
-          id="modalphone"
+          id="phone"
           class="modal-form__input"
           type="tel"
-          name="modalphone"
+          name="phone"
           placeholder=""
         />
-        <label for="modalphone" class="modal-form__label">Phone</label>
+        <label for="phone" class="modal-form__label">Phone</label>
         <svg class="modal-form__input-icon" width="13" height="13">
           <use href="./images/icons.svg#icon-phone"></use>
         </svg>
       </div>
       <div class="modal-form__input-container">
         <input
-          id="modalemail"
+          id="email"
           class="modal-form__input"
           type="email"
-          name="modalemail"
+          name="email"
           placeholder=""
         />
-        <label for="modalemail" class="modal-form__label">Email</label>
+        <label for="email" class="modal-form__label">Email</label>
         <svg class="modal-form__input-icon" width="15" height="12">
           <use href="./images/icons.svg#icon-email"></use>
         </svg>
@@ -169,14 +167,14 @@
         class="modal-form__input-container modal-form__input-container-comment"
       >
         <textarea
-          id="modalcomment"
+          id="message"
           class="modal-form__input modal-form__comment"
-          name="modalcomment"
+          name="message"
           cols="30"
           rows="10"
-          placeholder="Введіть текст"
+          placeholder="Leave a message"
         ></textarea>
-        <label for="modalcomment" class="modal-form__label">Comment</label>
+        <label for="message" class="modal-form__label">Comment</label>
       </div>
       <div class="license">
         <label class="license__label">
@@ -205,6 +203,7 @@
           </span>
         </label>
       </div>
+      <div id="success"></div>
       <button class="btn btn-send" type="submit">Send</button>
     </form>
   </div>
