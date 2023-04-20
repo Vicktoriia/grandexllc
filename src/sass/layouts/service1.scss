@@ -1,0 +1,130 @@
+.system {
+  padding-top: 0;
+
+  &__container {
+    @extend %container;
+    margin: auto;
+  }
+
+  &__row {
+    width: 100%;
+    align-items: center;
+
+    color: $main-text;
+  }
+
+  &__img {
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(to left bottom,
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)),
+    url(../images/Activities/box-1-l.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: cover;
+    background-color: $hero-bg;
+    background-position: center;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.2),
+          rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1-l.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      min-height: 500px;
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.2),
+          rgba(47, 48, 58, 0.2)),
+        url(../images/Activities/box-1-l.jpg);
+
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to left bottom,
+            rgba(47, 48, 58, 0.2),
+            rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1-l.jpg);
+      }
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.2),
+          rgba(47, 48, 58, 0.2)),
+        url(../images/Activities/box-1-l.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to left bottom,
+            rgba(47, 48, 58, 0.2),
+            rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1-l.jpg);
+      }
+    }
+  }
+
+  &__descr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+  }
+
+  &__text {
+    width: 100%;
+  }
+}
+
+.system__why {
+  margin: 0 auto auto;
+  padding: 10px;
+
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: $secondary-bg;
+  color: $light-text;
+}
+
+.system-why {
+  width: 100%;
+  gap: 20px;
+
+  // &__container-1 {
+  //   margin-bottom: 20px;
+  //   @media screen and (min-width: 768px) {
+  //       margin-bottom: 0;
+  //       margin-right: 20px;
+  //     }
+  // }
+}
+
+.system-why__container {
+  width: 100%;
+}
+
+.system-why__item {
+  padding-bottom: 10px;
+}
