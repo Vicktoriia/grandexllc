@@ -25,6 +25,13 @@
 
     background-color: $secondary-bg;
     color: $light-text;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: none;
+      color: $accent;
+    }
   }
 }
 

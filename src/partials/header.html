@@ -11,7 +11,18 @@
             <a class="nav__link nav__link--active link" href="#about">About</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link link" href="#services">Service</a>
+            <div class="dropdown">
+              <button class="dropbtn link" onclick="myFunction()">
+                Services
+                <!-- <a class="nav__link" href="#services">Service</a> -->
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="./service-1.html">Service 1</a>
+                <a href="./service-2.html">Service 2</a>
+                <a href="./service-3.html">Service 3</a>
+                <a href="./service-4.html">Service 4</a>
+              </div>
+            </div>
           </li>
           <li class="nav__item">
             <a class="nav__link link" href="#contacts">Contacts</a>
@@ -35,7 +46,7 @@
           </a>
         </li>
         <li class="top-menu__contacts-item">
-          <a class="top-menu__contacts-link link" href="tel:+380961111111">
+          <a class="top-menu__contacts-link link" href="tel:+00000000000">
             <svg
               class="top-menu__contacts-icon icon--smartphone"
               width="10px"
