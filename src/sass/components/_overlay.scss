@@ -7,7 +7,7 @@
 
   padding: 0;
 
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba(109, 103, 103, 0.774);
   color: $light-text;
 
   font-family: $main-font;
@@ -18,8 +18,8 @@
   transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1),
     padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .projects__item:hover &,
-  .projects__item:focus & {
+  .activities__picture:hover &,
+  .activities__picture:focus & {
     height: 100%;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      padding: 63px 24px;
+      padding: 14px;
     }
   }
 }

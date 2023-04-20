@@ -29,7 +29,7 @@
     background-image: linear-gradient(to left bottom,
       rgba(47, 48, 58, 0.2),
       rgba(47, 48, 58, 0.2)),
-    url(../images/Activities/box-1-l.jpg);
+    url(../images/Activities/box-1.jpg);
     background-repeat: no-repeat,
     no-repeat,
     no-repeat;
@@ -44,42 +44,128 @@
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to left bottom,
           rgba(47, 48, 58, 0.2),
-          rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1-l.jpg);
+          rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1.jpg);
     }
 
     @media screen and (min-width: 768px) {
       min-height: 500px;
-      background-image: linear-gradient(to left bottom,
-          rgba(47, 48, 58, 0.2),
-          rgba(47, 48, 58, 0.2)),
-        url(../images/Activities/box-1-l.jpg);
+    }
+  }
 
+  &2__img {
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: linear-gradient(to left bottom,
-            rgba(47, 48, 58, 0.2),
-            rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1-l.jpg);
-      }
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
     }
 
+    display: flex;
+    align-items: center;
 
-    @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to left bottom,
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)),
+    url(../images/Activities/box-2.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: cover;
+    background-color: $hero-bg;
+    background-position: center;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: linear-gradient(to left bottom,
           rgba(47, 48, 58, 0.2),
-          rgba(47, 48, 58, 0.2)),
-        url(../images/Activities/box-1-l.jpg);
+          rgba(47, 48, 58, 0.2)), url(../images/Activities/box-2.jpg);
+    }
 
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: linear-gradient(to left bottom,
-            rgba(47, 48, 58, 0.2),
-            rgba(47, 48, 58, 0.2)), url(../images/Activities/box-1-l.jpg);
-      }
+    @media screen and (min-width: 768px) {
+      min-height: 500px;
+    }
+  }
+
+  &3__img {
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(to left bottom,
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)),
+    url(../images/Activities/box-3.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: cover;
+    background-color: $hero-bg;
+    background-position: center;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.2),
+          rgba(47, 48, 58, 0.2)), url(../images/Activities/box-3.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      min-height: 500px;
+    }
+  }
+
+  &4__img {
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(to left bottom,
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)),
+    url(../images/Activities/box-4.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: cover;
+    background-color: $hero-bg;
+    background-position: center;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to left bottom,
+          rgba(47, 48, 58, 0.2),
+          rgba(47, 48, 58, 0.2)), url(../images/Activities/box-4.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      min-height: 500px;
     }
   }
 

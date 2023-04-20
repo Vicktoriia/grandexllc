@@ -1,5 +1,8 @@
 .benefits {
   @extend %section;
+  padding-top: 20px;
+  background-color: $secondary-bg;
+  color: $light-text;
 
   &__container {
     @extend %container;
@@ -20,7 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: secondary-bg;
+    fill: $light-text;
+    // background-color: $secondary-bg;
     border-radius: 4px;
   }
 }
@@ -35,10 +39,6 @@
   &-title {
     margin-bottom: 10px;
     text-align: center;
-
-    @media screen and (min-width: 768px) {
-      text-align: left;
-    }
   }
 
   @media screen and (min-width: 768px) {
