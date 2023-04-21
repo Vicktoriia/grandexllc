@@ -127,3 +127,8 @@
   font-weight: 700;
   margin-bottom: 30px;
 }
+
+.animate__fadeIn {
+  animation: fadeIn;
+  animation-duration: 4s;
+}
