@@ -31,7 +31,6 @@
 .btn-send {
   @extend %button;
 
-  width: 200px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 55px;
@@ -44,6 +43,6 @@
 
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: $secondary-bg;
   }
 }

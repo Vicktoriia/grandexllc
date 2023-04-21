@@ -8,6 +8,10 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grandex LLC</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,6 +43,7 @@
     <script src="./js/contacts-modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/dropdown.js"></script>
+    <script src="./js/email.js"></script>
     <!-- <script src="./js/header-modal.js"></script> -->
     <!-- <script src="./js/reviews.js"></script> -->
     <script src="./js/header-scroll.js"></script>
@@ -50,28 +55,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script
+    <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init('N6C48f6Ao0HOx8PHA');
+        emailjs.init('X1FD3pkgpfcowgz27');
       })();
-      var templateParams = {
-        to_name: 'xyz',
-        name: 'abc',
-        message: 'Please Find out the attached file',
-      };
-
-      emailjs.send('service_qfxw02m', 'template_0w5vank', templateParams).then(
-        function (response) {
-          console.log('SUCCESS!', response.status, response.text);
-        },
-        function (error) {
-          console.log('FAILED...', error);
-        }
-      );
-    </script> -->
+    </script>
   </body>
 </html>
